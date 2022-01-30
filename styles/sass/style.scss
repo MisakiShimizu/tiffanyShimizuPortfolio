@@ -1,0 +1,14 @@
+$baseFont: "Poppins", sans-serif;
+$secondFont: "Playfair Display", serif;
+$background: #f8f8f8;
+$beige: #eed7b7;
+$darkBeige: #b68c70;
+$lightGrey: #d9d9d9;
+$darkGrey: #515151;
+$charcoal: #425154;
+$black: #000000;
+// Imports
+@import "./partials/setup.scss";
+@import "./partials/general.scss";
+@import "./partials/typography.scss";
+@import "./partials/header.scss";
