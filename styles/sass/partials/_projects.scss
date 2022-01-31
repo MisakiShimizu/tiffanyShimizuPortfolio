@@ -1,0 +1,112 @@
+.ghibliContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.ghibliImg {
+    width: 50%;
+    position: relative;
+    left: 600px;
+    bottom: 150px;
+}
+.linkContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+.linkContainer li {
+    margin-left: 50px;
+}
+.ghibliWord:before{
+    content: "";
+    width: 150px;
+    border-bottom: 2px solid $darkBeige;
+    display: block;
+    position: relative;
+    right: 155px;
+    bottom: -25px;
+}
+.musicWord:before {
+    content: "";
+    width: 150px;
+    border-bottom: 2px solid $darkBeige;
+    display: block;
+    position: relative;
+    right: 155px;
+    bottom: -25px;
+}
+.musicImg {
+    width: 70%;
+    margin-top: 80px;
+}
+.musicMoodContainer {
+    display: flex;
+}
+.musicWord {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    position: relative;
+    bottom: 240px;
+    right: 140px;
+}
+.musicWord h2,
+.wordWord h2 {
+    text-align: right;
+}
+.wordImg,
+.dadImg {
+    width: 50%;
+    margin-top: 90px;
+}
+.wordSearchContainer {
+    display: flex;
+}
+.wordWord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    top: 70px;
+    &::after {
+        content: "";
+        width: 150px;
+        border-bottom: 2px solid $darkBeige;
+        display: block;
+        position: relative;
+        left: 235px;
+        top: -50px;
+    }
+}
+.repoLine:after {
+    content: "";
+    width: 10px;
+    height: 30px;
+    border-left: 2px solid $charcoal;
+    position: relative;
+    left: 28px;
+}
+.linkContainerLeft {
+    display: flex;
+}
+.linkContainerLeft li {
+    margin-right:  50px;
+    text-align: left;
+}
+.dadWord {
+    position: relative;
+    left: 215px;
+    &:before {
+    content: "";
+    width: 150px;
+    border-bottom: 2px solid $darkBeige;
+    display: block;
+    position: relative;
+    right: 215px;
+    top: 40px;
+    }
+}
+
+

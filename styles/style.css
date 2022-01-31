@@ -203,10 +203,20 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 section {
   margin: 40px 0;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  width: 100%;
 }
 
 html {
@@ -249,4 +259,164 @@ br {
 .highlightWord {
   background-color: #b68c70;
   height: 50px;
+}
+
+.ghibliContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ghibliImg {
+  width: 50%;
+  position: relative;
+  left: 600px;
+  bottom: 150px;
+}
+
+.linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.linkContainer li {
+  margin-left: 50px;
+}
+
+.ghibliWord:before {
+  content: "";
+  width: 150px;
+  border-bottom: 2px solid #b68c70;
+  display: block;
+  position: relative;
+  right: 155px;
+  bottom: -25px;
+}
+
+.musicWord:before {
+  content: "";
+  width: 150px;
+  border-bottom: 2px solid #b68c70;
+  display: block;
+  position: relative;
+  right: 155px;
+  bottom: -25px;
+}
+
+.musicImg {
+  width: 70%;
+  margin-top: 80px;
+}
+
+.musicMoodContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.musicWord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 30%;
+  position: relative;
+  bottom: 240px;
+  right: 140px;
+}
+
+.musicWord h2,
+.wordWord h2 {
+  text-align: right;
+}
+
+.wordImg,
+.dadImg {
+  width: 50%;
+  margin-top: 90px;
+}
+
+.wordSearchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wordWord {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  position: relative;
+  top: 70px;
+}
+.wordWord::after {
+  content: "";
+  width: 150px;
+  border-bottom: 2px solid #b68c70;
+  display: block;
+  position: relative;
+  left: 235px;
+  top: -50px;
+}
+
+.repoLine:after {
+  content: "";
+  width: 10px;
+  height: 30px;
+  border-left: 2px solid #425154;
+  position: relative;
+  left: 28px;
+}
+
+.linkContainerLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.linkContainerLeft li {
+  margin-right: 50px;
+  text-align: left;
+}
+
+.dadWord {
+  position: relative;
+  left: 215px;
+}
+.dadWord:before {
+  content: "";
+  width: 150px;
+  border-bottom: 2px solid #b68c70;
+  display: block;
+  position: relative;
+  right: 215px;
+  top: 40px;
 }
