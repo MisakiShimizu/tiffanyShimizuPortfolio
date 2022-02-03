@@ -1,0 +1,149 @@
+@media (max-width: 1220px) {
+   .wordImg::before {
+       top: 130px;
+   }
+   .dadWord::before {
+       left: 0;
+   }
+   .descriptionContainer p {
+       font-size: 1.7rem;
+   }
+   .skillContainer {
+       width: 90%;
+   }
+}
+@media (max-width: 1070px) {
+    h1 {
+        margin: 90px 65px;
+    }
+    .ghibliWord::before {
+        right: 60px;
+    }
+    .musicImg::before,
+    .wordImg::before {
+       display: none;
+    }
+    .descriptionContainer p {
+       font-size: 1.5rem;
+   }
+   .resp {
+       width: 100%;
+   }
+}
+@media (max-width: 840px) {
+    .ghibliWord::before {
+        top: 0;
+        right: -215px;
+    }
+    .dadWord::before {
+       top: 0;
+       left: 260px;
+   }
+    .descriptionContainer p {
+       font-size: 1.3rem;
+   }
+   .headshot {
+       width: 25%;
+   }
+   .slide {
+       padding: 50px 30px;
+   }
+   .slide i {
+       font-size: 2rem;
+   }
+   .wrapper p,
+   .mail a,
+   .resume a {
+       font-size: 0.8rem;
+   }
+}
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    .highlightWord:after {
+        width: 185px;
+    }
+    .contain {
+        width: 80%;
+    }
+    .linkContainer,
+    .wordLink {
+        justify-content: center;
+    }
+    .ghibliContainer {
+        align-items: center;
+    }
+    .ghibliWord::before,
+    .dadWord::before {
+        display: none;
+    }
+    .ghibliWord {
+        text-align: center;
+    }
+    .musicMoodContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .musicWord {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .wordSearchContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .wordWord,
+    .dadWord {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .dadContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .descriptionBox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fa-square-full {
+        display: none;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact ul {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .skillContainer {
+        width: 80%;
+    }
+    .skillContainer ul {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 5px 5px;
+    }
+    .slide {
+        padding: 35px 15px;
+        width: 70%;
+    }
+    .slide i {
+        padding: 20px;
+    }
+}
+@media (max-width: 390px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 90px auto;
+        text-align: center;
+        width: 80%;
+    }
+    .highlightWord:after {
+        width: 120px;
+        height: 35px;
+        right: -4px;
+    }
+}

@@ -2,7 +2,11 @@ html {
     font-size: 125%;
     font-family: $baseFont;
 }
-
+.logo {
+    font-size: 1rem;
+    font-family: $secondFont;
+    font-weight: 300;
+}
 h5 {
     font-family: $secondFont;
     font-size: 1rem;
@@ -14,4 +18,40 @@ h1 {
     color: white;
      font-weight: 300;
      font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+a {
+    color: $charcoal;
+    &:focus,
+    &:visited {
+        color: blue;
+    }
+}
+
+.descriptionContainer p {
+    font-size: 2rem;
+    color: rgba($darkGrey, 0.7);
+    font-weight: 300;
+    text-align: justify;
+}
+.slide p{
+    font-size: 1.6rem;
+    color: white;
+}
+.mail a {
+    font-size: 1rem;
+}
+.contact {
+    color: $charcoal;
 }

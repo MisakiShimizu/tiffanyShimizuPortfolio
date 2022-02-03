@@ -1,84 +1,13 @@
-.ghibliContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.ghibliImg {
-    width: 50%;
-    position: relative;
-    left: 600px;
-    bottom: 150px;
+.portfolio {
+    margin-top: 0;
 }
 .linkContainer {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 }
-.linkContainer li {
-    margin-left: 50px;
-}
-.ghibliWord:before{
-    content: "";
-    width: 150px;
-    border-bottom: 2px solid $darkBeige;
-    display: block;
-    position: relative;
-    right: 155px;
-    bottom: -25px;
-}
-.musicWord:before {
-    content: "";
-    width: 150px;
-    border-bottom: 2px solid $darkBeige;
-    display: block;
-    position: relative;
-    right: 155px;
-    bottom: -25px;
-}
-.musicImg {
-    width: 70%;
-    margin-top: 80px;
-}
-.musicMoodContainer {
-    display: flex;
-}
-.musicWord {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 30%;
-    position: relative;
-    bottom: 240px;
-    right: 140px;
-}
-.musicWord h2,
-.wordWord h2 {
-    text-align: right;
-}
-.wordImg,
-.dadImg {
-    width: 50%;
-    margin-top: 90px;
-}
-.wordSearchContainer {
-    display: flex;
-}
-.wordWord {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    position: relative;
-    top: 70px;
-    &::after {
-        content: "";
-        width: 150px;
-        border-bottom: 2px solid $darkBeige;
-        display: block;
-        position: relative;
-        left: 235px;
-        top: -50px;
-    }
+.repoLine {
+    margin-right: 30px;
 }
 .repoLine:after {
     content: "";
@@ -86,27 +15,112 @@
     height: 30px;
     border-left: 2px solid $charcoal;
     position: relative;
-    left: 28px;
+    left: 15px;
 }
-.linkContainerLeft {
+.wordLink  {
     display: flex;
 }
-.linkContainerLeft li {
-    margin-right:  50px;
-    text-align: left;
+.outerBox {
+    margin: 50px 0;
 }
-.dadWord {
+.contain {
+    width: 50%;
+}
+.ghibliImg {
+    margin-bottom: 50px;
+}
+.ghibliContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: relative;
-    left: 215px;
-    &:before {
+    bottom: 120px;
+}
+.ghibliWord {
+    text-align: right;
+    &::before {
     content: "";
-    width: 150px;
-    border-bottom: 2px solid $darkBeige;
+    width: 30%;
+    border-bottom: 1px solid $darkBeige;
     display: block;
     position: relative;
-    right: 215px;
-    top: 40px;
+    right: 20px;
+    bottom: -25px;
+    }
+}
+.musicMoodContainer {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.musicImg::before {
+   content: "";
+    width: 30%;
+    border-bottom: 1px solid $darkBeige;
+    display: block;
+    position: relative;
+    left: 490px;
+    top: 220px;
+}
+.musicWord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+.wordSearchContainer {
+    display: flex;
+    margin-bottom: 80px;
+}
+.wordImg::before {
+    content: "";
+    width: 30%;
+    border-bottom: 1px solid $darkBeige;
+    display: block;
+    position: relative;
+    left: -136px;
+    top: 148px;
+}
+.wordWord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-right: 30px;
+}
+.dadWord {
+    text-align: right;
+    margin-top: 50px;
+    &:before {
+        content: "";
+        width: 30%;
+        border-bottom: 1px solid $darkBeige;
+        display: block;
+        position: relative;
+        left: 95px;
+        top: 30px;
     }
 }
 
+.headshot {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+}
+.descriptionBox {
+    display: flex;
+}
+.descriptionContainer {
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 80%;
+}
+.fa-square-full {
+    font-size: 0.5rem;
+    margin-right: 10px;
+    color: $darkBeige;
+    position: relative;
+    top: 48px;
+}
 

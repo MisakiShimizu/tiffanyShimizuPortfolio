@@ -1,0 +1,39 @@
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact ul {
+    text-align: center;
+}
+.contact i {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.mail,
+.resume {
+    display: flex;
+    flex-direction: column;
+}
+.footerBorder{
+    border-top: 1px solid $charcoal;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerBorder h5 {
+    color: $charcoal;
+}
+.social {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+}
+.footerBorder ul {
+    display: flex;
+}
+.social li {
+    margin-right: 40px;
+}
+.social i {
+    font-size: 1.5rem;
+    color: $charcoal;
+}

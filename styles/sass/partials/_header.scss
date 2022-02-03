@@ -16,6 +16,32 @@ br {
 }
 
 .highlightWord {
-    background-color: $darkBeige;
-    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.highlightWord:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    z-index: -1;
+    background-color: #b68c70;
+    bottom: 5px;
+    right: -6px;
+    animation: highlighter 1s linear 3s 1 normal;
+}
+
+@keyframes highlighter {
+    0% {
+        transform: translateY(0deg);
+        height: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0deg);
+        height: 100%;
+    }
 }

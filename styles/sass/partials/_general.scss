@@ -16,11 +16,19 @@ ul {
     margin: 0;
 }
 section {
-    margin: 40px 0;
+    margin: 90px 0;
 }
 img {
     width: 100%;
 }
 h2 {
     width: 100%;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+button {
+    border: none;
+    background-color: $background;
 }
