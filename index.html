@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Material+Icons%7CPoppins:300,300i,400,400i,600,600i%7CPlayfair+Display:400i" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <div class="preloader">
@@ -56,7 +57,7 @@
                         <div class="contain">
                             <li class="imgWrapper musicImg">
                                 <!-- Music Mood Generator image -->
-                                <img src="./styles/assets/smartmockups_kz1oxhwu.png" alt="Music Mood Generator demo.">
+                                <img data-aos="fade-up" data-aos-duration="1000" src="./styles/assets/smartmockups_kz1oxhwu.png" alt="Music Mood Generator demo.">
                             </li>
                         </div>
                         <div class="musicWord contain">
@@ -87,7 +88,7 @@
                         </div>
                         <div class="contain">
                             <li class="wordImg imgWrapper">
-                                <img src="./styles/assets/smartmockups_kz1ol82l.jpg" alt="Word Search App preview.">
+                                <img data-aos="fade-up" data-aos-duration="1000" src="./styles/assets/smartmockups_kz1ol82l.jpg" alt="Word Search App preview.">
                             </li>
                         </div>
                     </ul>
@@ -97,7 +98,7 @@
                     <ul class="dadContainer">
                         <div class="contain">
                             <li class="imgWrapper">
-                                <img class="dadImg" src="./styles/assets/smartmockups_kz1p3wxp.jpg" alt="Daily Dad Jokes preview.">
+                                <img class="dadImg" data-aos="fade-up" data-aos-duration="1000"src="./styles/assets/smartmockups_kz1p3wxp.jpg" alt="Daily Dad Jokes preview.">
                             </li>
                         </div>
                         <div class="dadWord contain">
@@ -213,6 +214,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

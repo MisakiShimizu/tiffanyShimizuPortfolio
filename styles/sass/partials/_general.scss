@@ -20,23 +20,6 @@ section {
 }
 img {
     width: 100%;
-    animation: slideUp 1s linear 3s 1 normal;
-}
-.transition {
-    opacity: 1;
-    transform: none;
-}
-@keyframes slideUp {
-    0% {
-        transform: translateY(0deg);
-        height: 0%;
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0deg);
-        height: 100%;
-    }
 }
 h2 {
     width: 100%;

@@ -213,43 +213,8 @@ section {
 
 img {
   width: 100%;
-  -webkit-animation: slideUp 1s linear 3s 1 normal;
-          animation: slideUp 1s linear 3s 1 normal;
 }
 
-.transition {
-  opacity: 1;
-  -webkit-transform: none;
-          transform: none;
-}
-
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(0deg);
-            transform: translateY(0deg);
-    height: 0%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0deg);
-            transform: translateY(0deg);
-    height: 100%;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(0deg);
-            transform: translateY(0deg);
-    height: 0%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0deg);
-            transform: translateY(0deg);
-    height: 100%;
-  }
-}
 h2 {
   width: 100%;
 }
@@ -745,14 +710,6 @@ br {
   color: #425154;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .transition {
-    -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
-    transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
-    transition: opacity 1.5s ease, transform 1.5s ease;
-    transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
-  }
-}
 @media (max-width: 1220px) {
   .wordImg::before {
     top: 130px;
