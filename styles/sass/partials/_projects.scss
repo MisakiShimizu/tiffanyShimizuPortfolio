@@ -9,9 +9,23 @@
     left: 600px;
     bottom: 150px;
 }
+.ghibliWord {
+    text-align: right;
+    width: 45%;
+}
+.ghibliWord p {
+    display: block;
+    justify-content: flex-end;
+}
 .linkContainer {
     display: flex;
     justify-content: flex-end;
+}
+.wordLink  {
+    display: flex;
+}
+.wordLink li {
+    margin-right: 50px;
 }
 .linkContainer li {
     margin-left: 50px;
@@ -19,23 +33,23 @@
 .ghibliWord:before{
     content: "";
     width: 150px;
-    border-bottom: 2px solid $darkBeige;
+    border-bottom: 1px solid $darkBeige;
     display: block;
     position: relative;
-    right: 155px;
+    right: 20px;
     bottom: -25px;
 }
 .musicWord:before {
     content: "";
     width: 150px;
-    border-bottom: 2px solid $darkBeige;
+    border-bottom: 1px solid $darkBeige;
     display: block;
     position: relative;
     right: 155px;
     bottom: -25px;
 }
 .musicImg {
-    width: 70%;
+    width: 60%;
     margin-top: 80px;
 }
 .musicMoodContainer {
@@ -45,13 +59,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 30%;
+    width: 40%;
     position: relative;
-    bottom: 240px;
-    right: 140px;
+    bottom: 150px;
+    right: 185px;
 }
-.musicWord h2,
-.wordWord h2 {
+.musicWord p,
+.musicWord h2 {
     text-align: right;
 }
 .wordImg,
@@ -66,19 +80,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
     position: relative;
     top: 70px;
     &::after {
         content: "";
         width: 150px;
-        border-bottom: 2px solid $darkBeige;
+        border-bottom: 1px solid $darkBeige;
         display: block;
         position: relative;
-        left: 235px;
-        top: -50px;
+        left: 457px;
+        top: -143px;
     }
+}
+.wordWord p {
+    width: 65%;
 }
 .repoLine:after {
     content: "";
@@ -88,25 +105,33 @@
     position: relative;
     left: 28px;
 }
-.linkContainerLeft {
-    display: flex;
-}
-.linkContainerLeft li {
-    margin-right:  50px;
-    text-align: left;
-}
 .dadWord {
+    width: 36%;
+    text-align: right;
     position: relative;
-    left: 215px;
+    left: 170px;
     &:before {
-    content: "";
-    width: 150px;
-    border-bottom: 2px solid $darkBeige;
-    display: block;
-    position: relative;
-    right: 215px;
-    top: 40px;
+        content: "";
+        width: 150px;
+        border-bottom: 1px solid $darkBeige;
+        display: block;
+        position: relative;
+        right: 165px;
+        top: 40px;
     }
 }
 
+.descriptionBox {
+    display: flex;
+}
+.descriptionContainer {
+    margin-left: 20px;
+}
+.fa-square-full {
+    font-size: 0.5rem;
+    margin-right: 10px;
+    color: $darkBeige;
+    position: relative;
+    top: 10px;
+}
 

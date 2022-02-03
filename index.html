@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiffany Shimizu | Portfolio</title>
     <script src="https://kit.fontawesome.com/7da3fe92e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Material+Icons%7CPoppins:300,300i,400,400i,600,600i%7CPlayfair+Display:400i" />
 </head>
 <body>
+    <div class="preloader">
+        <div class="preloaderCurtain"></div>
+        <div class="preloaderWrapperLogo">
+            <div class="preloaderLogo">
+                <span class="logo">Tiffany Shimizu</span>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="wrapper">
             <h5>Tiffany Shimizu</h5>
@@ -31,6 +40,7 @@
                         <div  class="ghibliWord">
                             <li>
                                 <h2>Studio Ghibli Project</h2>
+                                <p>Step into the world of Ghibli and discover a Ghibli generator to help you choose your next Ghibli binge. This interactive app uses JQuery, HTML, and CSS.</p>
                             </li>
                             <div class="linkContainer">
                                 <li class="repoLine"><a href="https://github.com/MisakiShimizu/ghibliApp">GitHub Repo </a></li>
@@ -46,7 +56,10 @@
                         <img class="musicImg" src="./styles/assets/smartmockups_kz1oxhwu.png" alt="Music Mood Generator demo.">
                         </li>
                         <div class="musicWord">
-                            <li><h2 class="musicH2">Music Mood Generator</h2></li>
+                            <li>
+                                <h2>Music Mood Generator</h2>
+                                <p>Interested to find the right song to fit your mood? In comes Music Mood Generator. This fun groovy app uses JavaScript, HTML, CSS, SASS, and makes an API call to the Apple database.</p>
+                            </li>
                             <div class="linkContainer">
                                 <li class="repoLine"><a href="https://github.com/Music-Mood-Generator/musicMoodGenerator">GitHub Repo </a></li>
                                 <li><a href="https://elastic-almeida-3efeab.netlify.app/">Site Link</a></li>
@@ -59,9 +72,10 @@
                     <ul class="wordSearchContainer">
                         <div class="wordWord">
                             <li>
-                                <h2 class="lineRight">Word Search</h2>
+                                <h2>Word Search</h2>
+                                <p>Take a gander and look into the Word Search App. This interactive app uses React, makes a call to the Merriam Webster API, HTML, and SASS.</p>
                             </li>
-                            <div class="linkContainer">
+                            <div class="wordLink">
                                 <li class="repoLine"><a href="https://github.com/MisakiShimizu/word-search-app">GitHub Repo </a></li>
                                 <li><a href="https://word-search-app.netlify.app">Site Link</a></li>
                             </div>
@@ -80,77 +94,105 @@
                         <div class="dadWord">
                             <li>
                                 <h2>Daily Dad Jokes</h2>
+                                <p>Having a rough day and need a smile? Get your dose of daily dad jokes and cute images here! The app uses React, two API calls, SASS, and HTML.</p>
                             </li>
-                            <div class="linkContainerLeft">
+                            <div class="linkContainer">
                                 <li class="repoLine"><a href="https://github.com/daily-dad-jokes-crew-project-4/daily-dad-jokes">GitHub Repo </a></li>
                                 <li><a href="https://daily-dad-jokes.netlify.app">Site Link</a></li>
                             </div>
+                        </div>
                     </ul>
                 </div>
-                
-                <h3 class="bulletSquare">What I do</h3>
-                <p>I am a front-end software developer who creates functional and responsive web designs. I think it is important to create websites that make a positive impact on people. </p>
             </div>
         </section>
         <section>
-            <!-- Skill Sharing -->
             <div class="wrapper">
-                <div>
-                    <ul>
-                        <li>
-                            <p>HTML5</p>
-                            <i class="fab fa-html5"></i>
-                         </li>
-                        <li>
-                            <p>CSS3</p>
-                            <i class="fab fa-css3-alt"></i>
-                        </li>
-                        <li>
-                            <p>JavaScript</p>
-                            <i class="fab fa-js"></i>
-                        </li>
-                        <li>
-                            <p>React</p>
-                            <i class="fab fa-react"></i>
-                        </li>
-                        <li>
-                            <p>API</p>
-                            <i class="fas fa-cogs"></i>
-                        </li>
-                    </ul>
+                <div class="descriptionBox">
+                    <i class="fas fa-square-full"></i>
+                    <div class="descriptionContainer">
+                        <h3> What I do</h3>
+                        <p>I am a front-end software developer who creates functional and responsive web designs. I think it is important to create websites that make a positive impact on people. </p>
+                    </div>
                 </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper skillContainer"> 
+                <!-- Skill Sharing -->
+                <ul>
+                    <li class="slide">
+                        <p>HTML5</p>
+                        <i class="fab fa-html5"></i>
+                        </li>
+                    <li class="slide">
+                        <p>CSS3</p>
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="slide">
+                        <p>JavaScript</p>
+                        <i class="fab fa-js"></i>
+                    </li>
+                    <li class="slide">
+                        <p>React</p>
+                        <i class="fab fa-react"></i>
+                    </li>
+                    <li class="slide">
+                        <p>API</p>
+                        <i class="fas fa-cogs"></i>
+                    </li>
+                    <li class="slide">
+                        <p>Firebase</p>
+                        <i class="devicon-firebase-plain"></i>
+                    </li>
+                    <li class="slide">
+                        <p>GitHub</p>
+                        <i class="fab fa-github"></i>
+                    </li>
+                    <li class="slide">
+                        <p>JQuery</p>
+                        <i class="devicon-jquery-plain-wordmark"></i>
+                    </li>
+                    <li class="slide">
+                        <p class="resp">Responsive Design</p>
+                        <i class="fas fa-mobile-alt"></i>
+                    </li>
+                </ul>
             </div>
         </section>
         <section>
             <!-- Contact -->
-            <div class="wrapper">
-                <div>
-                    <ul>
-                        <li>
-                            <i class="fas fa-location-arrow"></i>
-                            <p>Toronto, Ontario</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <p>(416)-524-6692</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <i class="far fa-envelope-open"></i>
-                            <a href="mailto:tshimizumisaki@gmail.com">tshimizumisaki@gmail.com</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="wrapper contact">
+                <ul>
+                    <li>
+                        <i class="fas fa-location-arrow"></i>
+                        <p>Toronto, Ontario</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <p>(416)-524-6692</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="mail">
+                        <i class="far fa-envelope-open"></i>
+                        <a href="mailto:tshimizumisaki@gmail.com">tshimizumisaki@gmail.com</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="resume">
+                        <i class="far fa-file"></i>
+                        <a href="/styles/assets/misakiTShimizuResume.pdf" download="tiffanySResume">Download my Resumé here!</a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <footer>
-        <div class="wrapper">
+        <div class="wrapper footerBorder">
             <h5>Tiffany Shimizu</h5>
-            <div>
+            <div class="social">
                 <ul>
                     <li><a href="https://github.com/MisakiShimizu"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/tiffany-shimizu-93b01258/"><i class="fab fa-linkedin"></i></a></li>
