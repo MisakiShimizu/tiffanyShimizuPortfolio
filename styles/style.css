@@ -208,19 +208,55 @@ ul {
 }
 
 section {
-  margin: 60px 0;
+  margin: 90px 0;
 }
 
 img {
   width: 100%;
+  -webkit-animation: slideUp 1s linear 3s 1 normal;
+          animation: slideUp 1s linear 3s 1 normal;
 }
 
+.transition {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0deg);
+            transform: translateY(0deg);
+    height: 0%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0deg);
+            transform: translateY(0deg);
+    height: 100%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0deg);
+            transform: translateY(0deg);
+    height: 0%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0deg);
+            transform: translateY(0deg);
+    height: 100%;
+  }
+}
 h2 {
   width: 100%;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
@@ -231,6 +267,12 @@ button {
 html {
   font-size: 125%;
   font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
 }
 
 h5 {
@@ -336,7 +378,7 @@ a:focus, a:visited {
   position: relative;
   width: 290px;
   height: 145px;
-  outline: 2px solid rgba(136, 136, 136, 0.2);
+  outline: 2px solid #eed7b7;
   outline-offset: -2px;
 }
 
@@ -405,6 +447,51 @@ br {
     height: 100%;
   }
 }
+.portfolio {
+  margin-top: 0;
+}
+
+.linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.repoLine {
+  margin-right: 30px;
+}
+
+.repoLine:after {
+  content: "";
+  width: 10px;
+  height: 30px;
+  border-left: 2px solid #425154;
+  position: relative;
+  left: 15px;
+}
+
+.wordLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.outerBox {
+  margin: 50px 0;
+}
+
+.contain {
+  width: 50%;
+}
+
+.ghibliImg {
+  margin-bottom: 50px;
+}
+
 .ghibliContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,53 +503,16 @@ br {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.ghibliImg {
-  width: 50%;
   position: relative;
-  left: 600px;
-  bottom: 150px;
+  bottom: 120px;
 }
 
 .ghibliWord {
   text-align: right;
-  width: 45%;
 }
-
-.ghibliWord p {
-  display: block;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.linkContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.wordLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.wordLink li {
-  margin-right: 50px;
-}
-
-.linkContainer li {
-  margin-left: 50px;
-}
-
-.ghibliWord:before {
+.ghibliWord::before {
   content: "";
-  width: 150px;
+  width: 30%;
   border-bottom: 1px solid #b68c70;
   display: block;
   position: relative;
@@ -470,25 +520,21 @@ br {
   bottom: -25px;
 }
 
-.musicWord:before {
-  content: "";
-  width: 150px;
-  border-bottom: 1px solid #b68c70;
-  display: block;
-  position: relative;
-  right: 155px;
-  bottom: -25px;
-}
-
-.musicImg {
-  width: 60%;
-  margin-top: 80px;
-}
-
 .musicMoodContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 80px;
+}
+
+.musicImg::before {
+  content: "";
+  width: 30%;
+  border-bottom: 1px solid #b68c70;
+  display: block;
+  position: relative;
+  left: 490px;
+  top: 220px;
 }
 
 .musicWord {
@@ -499,30 +545,27 @@ br {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 40%;
-  position: relative;
-  bottom: 150px;
-  right: 185px;
-}
-
-.musicWord p,
-.musicWord h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: right;
-}
-
-.wordImg,
-.dadImg {
-  width: 50%;
-  margin-top: 90px;
 }
 
 .wordSearchContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 80px;
+}
+
+.wordImg::before {
+  content: "";
+  width: 30%;
+  border-bottom: 1px solid #b68c70;
+  display: block;
+  position: relative;
+  left: -136px;
+  top: 148px;
 }
 
 .wordWord {
@@ -536,50 +579,31 @@ br {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 50%;
-  position: relative;
-  top: 70px;
-}
-.wordWord::after {
-  content: "";
-  width: 150px;
-  border-bottom: 1px solid #b68c70;
-  display: block;
-  position: relative;
-  left: 457px;
-  top: -143px;
-}
-
-.wordWord p {
-  width: 65%;
-}
-
-.repoLine:after {
-  content: "";
-  width: 10px;
-  height: 30px;
-  border-left: 2px solid #425154;
-  position: relative;
-  left: 28px;
+  text-align: left;
+  padding-right: 30px;
 }
 
 .dadWord {
-  width: 36%;
   text-align: right;
-  position: relative;
-  left: 170px;
+  margin-top: 50px;
 }
 .dadWord:before {
   content: "";
-  width: 150px;
+  width: 30%;
   border-bottom: 1px solid #b68c70;
   display: block;
   position: relative;
-  right: 165px;
-  top: 40px;
+  left: 95px;
+  top: 30px;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .descriptionBox {
@@ -590,6 +614,8 @@ br {
 
 .descriptionContainer {
   margin-left: 20px;
+  margin-top: 40px;
+  width: 80%;
 }
 
 .fa-square-full {
@@ -597,7 +623,7 @@ br {
   margin-right: 10px;
   color: #b68c70;
   position: relative;
-  top: 10px;
+  top: 48px;
 }
 
 .skillContainer {
@@ -611,11 +637,11 @@ br {
 
 .slide {
   border: 0.5px solid #d9d9d9;
-  padding: 60px 40px;
+  padding: 60px 45px;
   text-align: center;
   background-color: #000000;
   display: inline-block;
-  width: 80%;
+  width: 75%;
 }
 
 .slide p {
@@ -717,4 +743,223 @@ br {
 .social i {
   font-size: 1.5rem;
   color: #425154;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .transition {
+    -webkit-transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+    transition: opacity 1.5s ease, -webkit-transform 1.5s ease;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition: opacity 1.5s ease, transform 1.5s ease, -webkit-transform 1.5s ease;
+  }
+}
+@media (max-width: 1220px) {
+  .wordImg::before {
+    top: 130px;
+  }
+
+  .dadWord::before {
+    left: 0;
+  }
+
+  .descriptionContainer p {
+    font-size: 1.7rem;
+  }
+
+  .skillContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 1070px) {
+  h1 {
+    margin: 90px 65px;
+  }
+
+  .ghibliWord::before {
+    right: 60px;
+  }
+
+  .musicImg::before,
+.wordImg::before {
+    display: none;
+  }
+
+  .descriptionContainer p {
+    font-size: 1.5rem;
+  }
+
+  .resp {
+    width: 100%;
+  }
+}
+@media (max-width: 840px) {
+  .ghibliWord::before {
+    top: 0;
+    right: -215px;
+  }
+
+  .dadWord::before {
+    top: 0;
+    left: 260px;
+  }
+
+  .descriptionContainer p {
+    font-size: 1.3rem;
+  }
+
+  .headshot {
+    width: 25%;
+  }
+
+  .slide {
+    padding: 50px 30px;
+  }
+
+  .slide i {
+    font-size: 2rem;
+  }
+
+  .wrapper p,
+.mail a,
+.resume a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .highlightWord:after {
+    width: 185px;
+  }
+
+  .contain {
+    width: 80%;
+  }
+
+  .linkContainer,
+.wordLink {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .ghibliContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .ghibliWord::before,
+.dadWord::before {
+    display: none;
+  }
+
+  .ghibliWord {
+    text-align: center;
+  }
+
+  .musicMoodContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .musicWord {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .wordSearchContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .wordWord,
+.dadWord {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .dadContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .descriptionBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .fa-square-full {
+    display: none;
+  }
+
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact ul {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .skillContainer {
+    width: 80%;
+  }
+
+  .skillContainer ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+  }
+
+  .slide {
+    padding: 35px 15px;
+    width: 70%;
+  }
+
+  .slide i {
+    padding: 20px;
+  }
+}
+@media (max-width: 390px) {
+  h1 {
+    font-size: 1.5rem;
+    margin: 90px auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .highlightWord:after {
+    width: 120px;
+    height: 35px;
+    right: -4px;
+  }
 }

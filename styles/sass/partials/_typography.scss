@@ -2,7 +2,11 @@ html {
     font-size: 125%;
     font-family: $baseFont;
 }
-
+.logo {
+    font-size: 1rem;
+    font-family: $secondFont;
+    font-weight: 300;
+}
 h5 {
     font-family: $secondFont;
     font-size: 1rem;

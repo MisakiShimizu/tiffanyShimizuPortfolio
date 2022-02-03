@@ -29,15 +29,17 @@
     </header>
     <main>
         <!-- Portfolio -->
-        <section>
+        <section class="portfolio">
             <div class="wrapper">
-                <div >
+                <div class="outerBox">
                     <ul class="ghibliContainer">
-                        <li>
-                            <!-- Ghibli image -->
-                            <img class="ghibliImg" src="./styles/assets/smartmockups_kz1pyll7.png" alt="Studio Ghibli Generator demo.">
-                        </li>
-                        <div  class="ghibliWord">
+                        <div class="contain">
+                            <li class="imgWrapper">
+                                <!-- Ghibli image -->
+                                <img class="ghibliImg" src="./styles/assets/smartmockups_kz1pyll7.png" alt="Studio Ghibli Generator demo.">
+                            </li>
+                        </div>
+                        <div  class="ghibliWord contain">
                             <li>
                                 <h2>Studio Ghibli Project</h2>
                                 <p>Step into the world of Ghibli and discover a Ghibli generator to help you choose your next Ghibli binge. This interactive app uses JQuery, HTML, and CSS.</p>
@@ -49,13 +51,15 @@
                         </div>
                     </ul>
                 </div>
-                <div >
+                <div class="outerBox">
                     <ul class="musicMoodContainer">
-                        <li>
-                            <!-- Music Mood Generator image -->
-                        <img class="musicImg" src="./styles/assets/smartmockups_kz1oxhwu.png" alt="Music Mood Generator demo.">
-                        </li>
-                        <div class="musicWord">
+                        <div class="contain">
+                            <li class="imgWrapper musicImg">
+                                <!-- Music Mood Generator image -->
+                                <img src="./styles/assets/smartmockups_kz1oxhwu.png" alt="Music Mood Generator demo.">
+                            </li>
+                        </div>
+                        <div class="musicWord contain">
                             <li>
                                 <h2>Music Mood Generator</h2>
                                 <p>Interested to find the right song to fit your mood? In comes Music Mood Generator. This fun groovy app uses JavaScript, HTML, CSS, SASS, and makes an API call to the Apple database.</p>
@@ -67,10 +71,11 @@
                         </div>
                     </ul>
                 </div>
-                <div >
+                <div class="outerBox">
                     <!-- Word Search -->
                     <ul class="wordSearchContainer">
-                        <div class="wordWord">
+                        
+                        <div class="wordWord contain">
                             <li>
                                 <h2>Word Search</h2>
                                 <p>Take a gander and look into the Word Search App. This interactive app uses React, makes a call to the Merriam Webster API, HTML, and SASS.</p>
@@ -80,18 +85,22 @@
                                 <li><a href="https://word-search-app.netlify.app">Site Link</a></li>
                             </div>
                         </div>
-                        <li class="wordImg">
-                            <img  src="./styles/assets/smartmockups_kz1ol82l.jpg" alt="Word Search App preview.">
-                        </li>
+                        <div class="contain">
+                            <li class="wordImg imgWrapper">
+                                <img src="./styles/assets/smartmockups_kz1ol82l.jpg" alt="Word Search App preview.">
+                            </li>
+                        </div>
                     </ul>
                 </div>
-                <div>
+                <div class="outerBox">
                     <!-- Daily Dad Jokes -->
-                    <ul>
-                        <li>
-                            <img class="dadImg" src="./styles/assets/smartmockups_kz1p3wxp.jpg" alt="Daily Dad Jokes preview.">
-                        </li>
-                        <div class="dadWord">
+                    <ul class="dadContainer">
+                        <div class="contain">
+                            <li class="imgWrapper">
+                                <img class="dadImg" src="./styles/assets/smartmockups_kz1p3wxp.jpg" alt="Daily Dad Jokes preview.">
+                            </li>
+                        </div>
+                        <div class="dadWord contain">
                             <li>
                                 <h2>Daily Dad Jokes</h2>
                                 <p>Having a rough day and need a smile? Get your dose of daily dad jokes and cute images here! The app uses React, two API calls, SASS, and HTML.</p>
@@ -108,6 +117,7 @@
         <section>
             <div class="wrapper">
                 <div class="descriptionBox">
+                    <img class="headshot transition" src="./styles/assets/headshot-removebg-preview.png" alt="Headshot of Tiffany.">
                     <i class="fas fa-square-full"></i>
                     <div class="descriptionContainer">
                         <h3> What I do</h3>
