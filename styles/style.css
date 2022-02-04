@@ -201,6 +201,10 @@ body {
   margin: 0 auto;
 }
 
+h2, h3, h4, h5, p, a {
+  line-height: 39px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -499,7 +503,7 @@ br {
   display: block;
   position: relative;
   left: 490px;
-  top: 220px;
+  top: 190px;
 }
 
 .musicWord {
@@ -712,7 +716,7 @@ br {
 
 @media (max-width: 1220px) {
   .wordImg::before {
-    top: 130px;
+    top: 100px;
   }
 
   .dadWord::before {
