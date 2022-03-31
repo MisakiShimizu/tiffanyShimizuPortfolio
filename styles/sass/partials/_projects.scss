@@ -1,126 +1,50 @@
-.portfolio {
-    margin-top: 0;
+.projectOuterContainer {
+    text-align: center;
+}
+.projectContainer {
+    padding: 0 40px ;
+}
+.projectContainer img {
+    width: 60%;
+}
+.projectList {
+    display: flex;
+    align-items: center;
+}
+.projectList h2 {
+    color: $darkGrey;
+}
+.content {
+    width: 40%;
+}
+.content p,
+.tools {
+    margin: 20px 0;
+}
+.tools {
+    display: flex;
+    justify-content: center;
+}
+.tools li {
+    margin: 20px;
+    color: $darkBeige;
+}
+.tools i {
+    font-size: 1.1rem;
 }
 .linkContainer {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content: space-evenly;
 }
-.repoLine {
-    margin-right: 30px;
-}
-.repoLine:after {
-    content: "";
-    width: 10px;
-    height: 30px;
-    border-left: 2px solid $charcoal;
-    position: relative;
-    left: 15px;
-}
-.wordLink  {
-    display: flex;
-}
-.outerBox {
-    margin: 50px 0;
-}
-.contain {
-    width: 50%;
-}
-.ghibliImg {
-    margin-bottom: 50px;
-}
-.ghibliContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: relative;
-    bottom: 120px;
-}
-.ghibliWord {
-    text-align: right;
-    &::before {
-    content: "";
-    width: 30%;
-    border-bottom: 1px solid $darkBeige;
-    display: block;
-    position: relative;
-    right: 20px;
-    bottom: -25px;
+.linkContainer li {
+    background-color: #FFFFFF;
+    padding: 10px;
+    transition: all 150ms ease-out;
+    &:hover {
+        box-shadow: 2px 1px 2px 1px $darkBeige;
     }
 }
-.musicMoodContainer {
-    display: flex;
-    margin-bottom: 80px;
+.music,
+.dad {
+    flex-direction: row-reverse;
 }
-
-.musicImg::before {
-   content: "";
-    width: 30%;
-    border-bottom: 1px solid $darkBeige;
-    display: block;
-    position: relative;
-    left: 490px;
-    top: 190px;
-}
-.musicWord {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
-}
-.wordSearchContainer {
-    display: flex;
-    margin-bottom: 80px;
-}
-.wordImg::before {
-    content: "";
-    width: 30%;
-    border-bottom: 1px solid $darkBeige;
-    display: block;
-    position: relative;
-    left: -136px;
-    top: 148px;
-}
-.wordWord {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding-right: 30px;
-}
-.dadWord {
-    text-align: right;
-    margin-top: 50px;
-    &:before {
-        content: "";
-        width: 30%;
-        border-bottom: 1px solid $darkBeige;
-        display: block;
-        position: relative;
-        left: 95px;
-        top: 30px;
-    }
-}
-
-.headshot {
-    border-radius: 50%;
-    width: 30%;
-    height: 30%;
-    align-items: center;
-}
-.descriptionBox {
-    display: flex;
-}
-.descriptionContainer {
-    margin-left: 20px;
-    margin-top: 40px;
-    width: 80%;
-}
-.fa-square-full {
-    font-size: 0.5rem;
-    margin-right: 10px;
-    color: $darkBeige;
-    position: relative;
-    top: 48px;
-}
-

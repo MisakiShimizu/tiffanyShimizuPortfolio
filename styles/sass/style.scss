@@ -1,18 +1,19 @@
-$baseFont: "Poppins", sans-serif;
-$secondFont: "Playfair Display", serif;
+$baseFont: "Lora", serif;
+$secondFont: "Raleway", sans-serif;
 $background: #f8f8f8;
 $beige: #eed7b7;
-$darkBeige: #b68c70;
+$darkBeige: #9A8174;
 $lightGrey: #d9d9d9;
-$darkGrey: #515151;
+$darkGrey: #3B3B3b;
 $charcoal: #425154;
-$black: #000000;
+$black: #2B2B2B;
 // Imports
 @import "./partials/setup.scss";
 @import "./partials/general.scss";
 @import "./partials/typography.scss";
 @import "./partials/preloader.scss";
 @import "./partials/header.scss";
+@import "./partials/about.scss";
 @import "./partials/projects.scss";
 @import "./partials/skills.scss";
 @import "./partials/bottom.scss";
