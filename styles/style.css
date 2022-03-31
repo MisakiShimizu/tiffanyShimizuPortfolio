@@ -365,8 +365,9 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   position: absolute;
-  top: 120px;
-  right: 30px;
+  top: 90px;
+  right: 0px;
+  background-color: #d9d9d9;
 }
 
 .showMenu li:hover {
@@ -925,6 +926,8 @@ span {
 
   #mobile {
     display: none;
+    width: 30%;
+    border-radius: 5%;
   }
 
   .headerBox h2 {

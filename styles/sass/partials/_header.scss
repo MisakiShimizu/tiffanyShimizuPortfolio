@@ -23,8 +23,9 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 120px; 
-    right: 30px;
+    top: 90px; 
+    right: 0px;
+    background-color:rgba(217, 217, 217);
 }
 .showMenu li:hover {
     border-bottom: 1px solid $charcoal;
