@@ -1,47 +1,165 @@
-header {
-    background-color: $darkGrey;
-    padding-bottom: 40px;
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 250px;
 }
-h5 {
-    padding-top: 40px;
+.logo {
+    background: rgba(217, 217, 217, 0.3);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0; 
+    z-index: 10;
 }
-
-h1 {
-    text-align: left;
-    margin: 90px 165px;
-    width: 90%;
+#mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
 }
-br {
-    text-align: left;
-}
-
-.highlightWord {
-    position: relative;
-    z-index: 1;
-}
-
-.highlightWord:after {
-    content: '';
-    display: inline-block;
+.showMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     position: absolute;
-    height: 60px;
-    width: 200px;
-    z-index: -1;
-    background-color: #b68c70;
-    bottom: 5px;
-    right: -6px;
-    animation: highlighter 1s linear 3s 1 normal;
+    top: 120px; 
+    right: 30px;
+}
+.showMenu li:hover {
+    border-bottom: 1px solid $charcoal;
+}
+.mobileMenu {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    border: none;
+    background: transparent;
+}
+.mobileMenu i {
+    font-size: 1.5rem;
+}
+h1 {
+    margin-bottom: 60px;
+}
+h4 {
+    padding: 30px 0 30px 200px;
+}
+.headerBox {
+    position: relative;
 }
 
-@keyframes highlighter {
-    0% {
-        transform: translateY(0deg);
-        height: 0%;
-        opacity: 0;
-    }
+.highlighter {
+    width: 600px;
+    background: linear-gradient(
+        to right,
+        rgba(238, 215, 183, 0.1),
+        rgba(238, 215, 183, 0.4) 4%,
+        rgba(238, 215, 183, 0.3)
+    );
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    position: absolute;
+    bottom: 85%;
+    left: 15%;
+}
+span {
+    padding: 0.1em 0.4em;
+}
+.headerBox h2 {
+    overflow: hidden;
+    border-right: .15em solid $darkBeige; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
-    100% {
-        transform: translateY(0deg);
-        height: 100%;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $darkBeige; }
+}
+// Cartoon
+.peep {
+    position: relative;
+    bottom: 75%;
+    left: 38%;
+    width:25%;
+}
+.socialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.socialContainer ul {
+    position: fixed;
+    top: 180px;
+    right: 50px;
+}
+.socialContainer i {
+    font-size: 2rem;
+    color: $darkGrey;
+}
+.socialContainer li {
+    text-align: center;
+    cursor: pointer;
+}
+.socialContainer li:hover  h4{
+    opacity: 1;
+    right: 85px;
+    top: 50px;
+    background-image: linear-gradient(to right, $beige, rgba($beige, 0));
+    border-radius: 5%;
+}
+.socialContainer li h4 {
+    opacity: 0;
+    position: relative;
+    padding: 10px 20px;
+    right: -200px;
+}
+
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+}
+.arrow p {
+    align-self: center;
+    transform: rotate(-90deg);
+    margin-bottom: 100px;
+}
+.arrow i{
+    border: none;
+    background: transparent;
+    animation: jump 2s infinite;
+    position: absolute;
+    left: 48%;
+    top: 110%;
+}
+@keyframes jump {
+    0% {
+        transform: translate(0%, -50%) scale(1, 1);
     }
+    50% {
+        transform: translate(0%, -90%) scale(1, 1);
+    }
+    100% {
+        transform: translate(0%, -50%) scale(1, 1);
+    }
+}
+.arrow i {
+    font-size: 3rem;
 }

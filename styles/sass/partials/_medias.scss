@@ -1,149 +1,140 @@
-@media (max-width: 1220px) {
-   .wordImg::before {
-       top: 100px;
-   }
-   .dadWord::before {
-       left: 0;
-   }
-   .descriptionContainer p {
-       font-size: 1.7rem;
-   }
-   .skillContainer {
-       width: 90%;
-   }
+@media (max-width: 1400px) {
+    h4 {
+        width: 100%;
+        padding: 30px 0px 30px 50px;
+    }
+    .socialContainer ul{
+        right: -40px;
+    }
+    .socialContainer li h4 {
+        padding: 5px;
+    }
+    .peep {
+        left: 45%;
+    }
+    .highlighter {
+        left: 5%;
+    }
+    .headerBox h2 {
+        font-size: 1.2rem;
+    }
+} 
+@media (max-width: 1000px) {
+    .headshot {
+        width: 20%;
+    }
+    .projectContainer {
+        margin-left: 100px;
+    }
+    .skillContainer li {
+        padding: 40px 25px;
+        width: 50%;
+    }
+    
 }
-@media (max-width: 1070px) {
-    h1 {
-        margin: 90px 65px;
+@media (max-width: 810px) {
+    h4 {
+        width: 100%;
+        padding: 30px 0 30px 50px;
     }
-    .ghibliWord::before {
-        right: 60px;
+    .socialContainer ul{
+        top: 500px;
     }
-    .musicImg::before,
-    .wordImg::before {
-       display: none;
+    .socialContainer li {
+        margin-bottom: 40px;
+        cursor: pointer;
     }
-    .descriptionContainer p {
-       font-size: 1.5rem;
-   }
-   .resp {
-       width: 100%;
-   }
-}
-@media (max-width: 840px) {
-    .ghibliWord::before {
-        top: 0;
-        right: -215px;
-    }
-    .dadWord::before {
-       top: 0;
-       left: 260px;
-   }
-    .descriptionContainer p {
-       font-size: 1.3rem;
-   }
-   .headshot {
-       width: 25%;
-   }
-   .slide {
-       padding: 50px 30px;
-   }
-   .slide i {
-       font-size: 2rem;
-   }
-   .wrapper p,
-   .mail a,
-   .resume a {
-       font-size: 0.8rem;
-   }
-}
-@media (max-width: 700px) {
-    h1 {
-        font-size: 2.3rem;
-    }
-    .highlightWord:after {
-        width: 185px;
-    }
-    .contain {
-        width: 80%;
-    }
-    .linkContainer,
-    .wordLink {
-        justify-content: center;
-    }
-    .ghibliContainer {
-        align-items: center;
-    }
-    .ghibliWord::before,
-    .dadWord::before {
+    .socialContainer ul h4 {
         display: none;
     }
-    .ghibliWord {
-        text-align: center;
+    .mobileMenu {
+        display: block;
     }
-    .musicMoodContainer{
-        flex-direction: column;
-        align-items: center;
+    #mobile {
+        display: none;
     }
-    .musicWord {
-        text-align: center;
-        margin: 0 auto;
+    .headerBox h2 {
+        font-size: 1rem;
     }
-    .wordSearchContainer {
-        flex-direction: column-reverse;
-        align-items: center;
+    h1 {
+        font-size: 1.6rem;
     }
-    .wordWord,
-    .dadWord {
-        text-align: center;
-        margin: 0 auto;
+    .highlighter {
+        width: 500px;
     }
-    .dadContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    h3 {
+        font-size: 1.5rem;
     }
     .descriptionBox {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column-reverse;
     }
-    .fa-square-full {
-        display: none;
-    }
-    .contact {
-        flex-direction: column;
-    }
-    .contact ul {
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 500px) {
-    .skillContainer {
+    .descriptionContainer {
         width: 80%;
     }
+    .headshot {
+        width: 40%;
+    }
+    .projectOuterContainer h3{
+        text-align: left;
+    }
+    .projectContainer {
+        margin-left: 0px;
+    }
+   .projectList {
+       flex-direction: column;
+       padding: 40px;
+   }
+   .projectContainer img {
+       width: 50%;
+   }
+   .content {
+       width: 80%;
+   }
+   .linkContainer li {
+       box-shadow: 2px 1px 2px 1px $darkBeige;
+   }
     .skillContainer ul {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 5px 5px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 100px;
     }
-    .slide {
-        padding: 35px 15px;
+    
+}
+@media (max-width: 600px) {
+     .headerBox h2 {
+        animation: none;
+        overflow: visible;
+        white-space: normal;
+        border-right: none;
         width: 70%;
     }
-    .slide i {
+    .highlighter {
+        width: 90%;
+    }
+    .peep {
+        left: 5%;
+        bottom: 95%;
+        width: 37%;
+    }
+    .arrow i {
+        left: 45%;
+    }
+    .skillContainer ul {
+        margin-left: 0;
+    }
+    .skillContainer i {
+        font-size: 1.5rem;
         padding: 20px;
     }
 }
-@media (max-width: 390px) {
-    h1 {
-        font-size: 1.5rem;
-        margin: 90px auto;
-        text-align: center;
-        width: 80%;
+@media (max-width:430px) {
+    .projectList h2 {
+        font-size: 1.3rem;
     }
-    .highlightWord:after {
-        width: 120px;
-        height: 35px;
-        right: -4px;
+    .linkContainer li {
+        margin-right: 10px;
+    }
+    .content {
+        width: 90%;
     }
 }

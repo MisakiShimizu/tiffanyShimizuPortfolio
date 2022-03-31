@@ -1,0 +1,18 @@
+.descriptionBox {
+    display: flex;
+}
+.headshot {
+    align-self: center;
+    border-radius: 50%;
+    width: 30%;
+    margin-right: 50px;
+}
+.descriptionContainer {
+    width: 65%;
+}
+.descriptionContainer p {
+    margin: 10px 0;
+}
+.parker {
+    cursor: url(../assets/parker.png), auto;
+}
